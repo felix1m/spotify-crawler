@@ -1,6 +1,6 @@
 # Compiled python modules.
 *.pyc
-
+/pyenv/
 # Setuptools distribution folder.
 /dist/
 

@@ -7,7 +7,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Click',
-        'pyitunes',
+        'pyItunes',
         'six',
         'spotipy>=2.3'
     ],
@@ -17,6 +17,6 @@ setup(
     ],
 },
     dependency_links=[
-          'git+https://github.com/liamks/pyitunes.git#egg=pyItunes',
+          '"git+ssh://git@github.com/liamks/pyItunes.git@master#egg=pyItunes',
       ]
 )
