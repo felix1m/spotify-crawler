@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # songs: local
 # tracks: spotify
 class Song(object):

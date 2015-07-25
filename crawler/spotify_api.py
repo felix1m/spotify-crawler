@@ -30,7 +30,7 @@ class Spotify(object):
 
   def search_track_uri(self, song, attempt=0):
     if attempt > 1:
-      click.echo('FAILED: attempt: ' + str(attempt) + ' Song: ' + str(song), err=True)
+      click.echo('FAILED: ' + unicode(song), err=True)
       return None
 
     s = 'artist:'+ song.artist + ' track:'+ song.name

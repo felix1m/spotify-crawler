@@ -1,5 +1,6 @@
-from containers import *
+# -*- coding: utf-8 -*-
 import re
+from .containers import Playlist, Song
 
 def get_from_file(path):
   with open(path) as f:

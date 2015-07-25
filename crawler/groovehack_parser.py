@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import print_function
 try:
     from urllib.request import urlopen
@@ -7,7 +9,7 @@ except ImportError:
     from urllib import urlopen
 import pprint
 import json
-from containers import Playlist, Song
+from .containers import Playlist, Song
 
 API_SEARCH_URI = "http://www.groovehack.com/api/sets?glob="
 
@@ -28,4 +30,4 @@ def parse_track(track):
   if artist == "UNKNOWN":
     return None
   else:
-    return Song(str(artist), None, str(title))
+    return Song(artist, None, title)

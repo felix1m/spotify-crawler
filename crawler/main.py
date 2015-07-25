@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import click
-from file_parser import get_from_file
-from itunes_parser import get_itunes_playlists
-from spotify_api import Spotify
-from groovehack_parser import get_groovehack_set
+from .file_parser import get_from_file
+from .itunes_parser import get_itunes_playlists
+from .spotify_api import Spotify
+from .groovehack_parser import get_groovehack_set
 
 @click.group()
 def cli():

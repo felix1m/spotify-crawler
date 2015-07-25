@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 from pyItunes import *
 import re
-from containers import *
+from .containers import Playlist, Song
 
 def get_itunes_playlists(lib_path, regex):
   l = Library(lib_path)

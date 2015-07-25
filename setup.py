@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='spotify-crawler',
     version='0.2',
-    packages=['crawler'],
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     include_package_data=True,
     install_requires=[
         'Click',
@@ -13,10 +13,10 @@ setup(
     ],
     entry_points={
     'console_scripts': [
-        'spotify-crawler=main:cli',
+        'spotify-crawler=crawler.main:cli',
     ],
 },
     dependency_links=[
-          '"git+ssh://git@github.com/liamks/pyItunes.git@master#egg=pyItunes',
+          'http://github.com/liamks/pyitunes/tarball/master#egg=pyItunes-master'
       ]
 )

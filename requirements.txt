@@ -1,5 +1,4 @@
 click==4.1
 -e git+git@github.com:liamks/pyitunes.git#egg=pyItunes-master
-requests
 six
 spotipy
