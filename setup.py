@@ -1,8 +1,13 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
 setup(
     name='spotify-crawler',
-    version='0.2',
+    version='0.1',
+    url='https://github.com/felix1m/spotify-crawler',
+    description='automatically create spotify playlists from various sources',
+    author='Felix Müller',
+    author_email='mueller.fe@gmail.com',
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     include_package_data=True,
     install_requires=[
