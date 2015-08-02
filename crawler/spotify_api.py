@@ -33,7 +33,10 @@ class Spotify(object):
       click.echo('FAILED: ' + unicode(song), err=True)
       return None
 
-    s = 'artist:'+ song.artist + ' track:'+ song.name
+    s = 'track:'+ song.name
+    if song.artist:
+      s = 'artist:'+ song.artist + ' ' + s
+
     s = re.sub('[Ff]eat. ', '', s)
     s = re.sub('[&,-]', '', s).strip()
 
